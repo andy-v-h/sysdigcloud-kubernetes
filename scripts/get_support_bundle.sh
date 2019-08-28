@@ -3,7 +3,7 @@
 set -euo pipefail
 
 #generate sysdigcloud support bundle on kubernetes
-NAMESPACE=${1}
+NAMESPACE=${1:-sysdigcloud}
 CONTEXT=${2:-}
 
 if [[ -z ${CONTEXT} ]] ; then
